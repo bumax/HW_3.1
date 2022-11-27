@@ -3,7 +3,6 @@
 Console.Write("Введите число: ");
 var number = Convert.ToInt32(Console.ReadLine());
 
-bool negativeFlag = new bool();
 
 if (number > 0)
     for(int i = 1; i <= number; i++){
@@ -14,7 +13,7 @@ else
 {
     for(int i = 1; i >= number; i--){
     if(i%2 == 0)
-        Console.WriteLine(i * (1 - (negativeFlag ? 1 : 0) * 2));
+        Console.WriteLine(i);
 }
 }
 
